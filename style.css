@@ -3,12 +3,16 @@
 
 body {
   width: 100%;
-  min-width: 100vh;
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 .nav >a:hover{
   color: rgb(12, 214, 245);
+}
+
+.bgplant {
+  background-image: url('./assets/plant-bg.png');
 }
 
 /* bg-sky-500  */
