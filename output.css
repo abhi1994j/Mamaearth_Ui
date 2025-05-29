@@ -11,6 +11,7 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-lime-400: oklch(84.1% 0.238 128.85);
     --color-lime-500: oklch(76.8% 0.233 130.85);
     --color-lime-600: oklch(64.8% 0.2 131.684);
     --color-lime-700: oklch(53.2% 0.157 131.589);
@@ -303,6 +304,9 @@
   }
   .m-40 {
     margin: calc(var(--spacing) * 40);
+  }
+  .m-auto {
+    margin: auto;
   }
   .mx-auto {
     margin-inline: auto;
@@ -859,6 +863,9 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
@@ -904,6 +911,9 @@
   .px-40 {
     padding-inline: calc(var(--spacing) * 40);
   }
+  .px-150 {
+    padding-inline: calc(var(--spacing) * 150);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -942,6 +952,9 @@
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
@@ -999,6 +1012,10 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .tracking-\[0\.36rem\] {
+    --tw-tracking: 0.36rem;
+    letter-spacing: 0.36rem;
+  }
   .text-black {
     color: var(--color-black);
   }
@@ -1022,6 +1039,9 @@
   }
   .text-gray-950 {
     color: var(--color-gray-950);
+  }
+  .text-lime-400 {
+    color: var(--color-lime-400);
   }
   .text-lime-500 {
     color: var(--color-lime-500);
@@ -1372,6 +1392,10 @@ body {
   syntax: "*";
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -1542,6 +1566,7 @@ body {
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
